@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+<!---->
+<JboProject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="BC"
+  Version="11.1.1.56.60"
+  SeparateXMLFiles="true"
+  PackageName="bc">
+  <DesignTime>
+    <Attr Name="_jprName" Value="../../BC.jpr"/>
+    <Attr Name="_NamedConnection" Value="Tareas"/>
+    <Attr Name="_appModuleNames0" Value="bc.view.AppModule"/>
+  </DesignTime>
+  <Containee
+    Name="entities"
+    PackageName="bc.entities"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_EO" Value="true"/>
+      <Attr Name="_AS" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="view"
+    PackageName="bc.view"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_VO" Value="true"/>
+      <Attr Name="_VL" Value="true"/>
+      <Attr Name="_AM" Value="true"/>
+    </DesignTime>
+  </Containee>
+</JboProject>
