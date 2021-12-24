@@ -1,6 +1,8 @@
 # BusinessComponents (Actividad propuesta para clase día 20/12/21).
 
+
 ### **Formación con ADF en AYI Group.** ###
+
 
 
 Profesor:
@@ -10,6 +12,8 @@ Integrante: **Gatica , Emmanuel David.**
 
 
 ## **Introducción a Business Components** 
+
+**Proyecto realizado en Jdeveloper 11g y 12c**
 
 Este documento es una continuación del tutorial Oracle ADF: desarrollo de una
 aplicación con ADF, EJB y JSF, en jDeveloper 11, al que complementa.
