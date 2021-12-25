@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.22.48" id="editarTemasPageDef"
+                Package="bc.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="TemasView1" RangeSize="25" DataControl="AppModuleDataControl" id="TemasView1Iterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="TemasView1Iterator" id="Descripcion">
+      <AttrNames>
+        <Item Value="Descripcion"/>
+      </AttrNames>
+    </attributeValues>
+    <list IterBinding="TemasView1Iterator" StaticList="false" Uses="LOV_FkEstado" id="FkEstado" DTSupportsMRU="false"
+          SelectItemValueMode="ListObject"/>
+    <attributeValues IterBinding="TemasView1Iterator" id="Tema">
+      <AttrNames>
+        <Item Value="Tema"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TemasView1Iterator" id="Incidencias">
+      <AttrNames>
+        <Item Value="Incidencias"/>
+      </AttrNames>
+    </attributeValues>
+    <action IterBinding="TemasView1Iterator" id="First" RequiresUpdateModel="true" Action="first"/>
+    <action IterBinding="TemasView1Iterator" id="Previous" RequiresUpdateModel="true" Action="previous"/>
+    <action IterBinding="TemasView1Iterator" id="Next" RequiresUpdateModel="true" Action="next"/>
+    <action IterBinding="TemasView1Iterator" id="Last" RequiresUpdateModel="true" Action="last"/>
+  </bindings>
+</pageDefinition>
